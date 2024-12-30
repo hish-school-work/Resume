@@ -1,0 +1,109 @@
+\documentclass[12pt, letter, hidelinks]{article}
+
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\usepackage{parskip}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage[none]{hyphenat}  % Disable hyphenation
+
+\pagestyle{empty}
+\setlist{nosep}
+
+%==================== CUSTOM ENVIRONMENTS ====================%
+\newenvironment{personalInfo}[4]{
+  {\bf \LARGE{#1}} \hfill {#2} \\
+  {#3} \hfill {#4}
+}
+
+\newenvironment{sectionHeader}[1]{
+  \vspace{1em}
+  {\bf \MakeUppercase{#1}} \vspace{0.25em} \hrule
+}
+
+\newenvironment{rSection}[4] {
+  \vspace{0.5em}
+  {\bf #1} \hfill {\bf #2} \\
+  {#3} \hfill {\it #4}
+}
+
+%==================== DOCUMENT BEGINS ====================%
+\begin{document}
+
+%------------------------ HEADER ------------------------%
+\begin{personalInfo}
+  {Hishmat Salehi}{\href{mailto:hishmat.salehi2015@gmail.com}{hishmat.salehi2015@gmail.com}}
+  {\href{https://github.com/hish-math}{github.com/hish-math}}   {\href{https://www.linkedin.com/in/hishmat-salehi/}{linkedin.com/in/hishmat-salehi/}}\\
+
+\end{personalInfo}
+
+%------------------------ SUMMARY ------------------------%
+\begin{sectionHeader}{Professional Summary}\end{sectionHeader}
+Data Scientist with a strong Computer Science and Mathematics background. Skilled in Python, Java, JavaScript, SQL, and Power BI. Experienced in agent-based modeling and developing data-driven solutions that streamline processes and deliver actionable insights.
+
+%------------------------ SKILLS ------------------------%
+\begin{sectionHeader}{Skills}\end{sectionHeader}
+\begin{tabular}{@{} >{\bfseries}l @{\hspace{1em}} l}
+Data Science & Python, SQL, Scala, Power BI \\
+Programming  & Java, JavaScript, C++ \\
+Other        & Git, Linux, Pandas, Streamlit, MESA \\
+\end{tabular}
+
+%------------------------ EXPERIENCE ------------------------%
+\begin{sectionHeader}{Experience}\end{sectionHeader}
+
+\begin{rSection} 
+{Data Science Student}{} 
+{PCL Construction}{Jan 2024 - Aug 2024} 
+\end{rSection}
+\begin{itemize}
+  \item Developed a \textbf{Streamlit} web app, QC Dispatch, to display the outcomes of agent-based simulations, facilitating optimal allocation of resources in Quality Control operations.
+  \item Employed agent-based modeling with \textbf{Python}'s \textbf{MESA} library to simulate complex project workflows, predicting project completion times and a 15\% increase in operational efficiency.
+\end{itemize}
+
+\begin{rSection}
+{Business Systems Analyst II}{}
+{McMaster University}{Mar 2022 - Apr 2023}
+\end{rSection}
+\begin{itemize}
+  \item Created advanced \textbf{Power BI} dashboards to present key insights and inform stakeholder decisions.
+  \item Extracted data from a cloud-based CRM (Slate) and various sources, transformed it into a structured format, and prepared it for analysis to drive business decisions.
+\end{itemize}
+
+\begin{rSection}
+{Teaching Assistant - COMPSCI 2AC3 (Automata and Computability)}{}
+{McMaster University}{Jan 2022 - Apr 2022}
+\end{rSection}
+\begin{itemize}
+  \item Taught finite state machines, regular expressions, and computability to a class of 50+ students.
+\end{itemize}
+
+\begin{rSection}
+{Teaching Assistant - COMPSCI 1JC3 (Intro to Computational Thinking)}{}
+{McMaster University}{Sep 2021 - Dec 2021}
+\end{rSection}
+\begin{itemize}
+\item Taught \textbf{Haskell} and functional programming techniques, including recursion and modular problem solving, to enhance students' coding skills and analytical thinking.
+\end{itemize}
+
+%------------------------ EDUCATION ------------------------%
+\begin{sectionHeader}{Education}\end{sectionHeader}
+
+\begin{rSection}
+{M.Sc. in Modeling, Data \& Prediction (MDP)}
+{Sep 2023 - Apr 2025}
+{University of Alberta}
+{Edmonton, AB}
+\end{rSection}
+
+\begin{rSection}
+{B.Sc. in Computer Science (w/ Math minor), cGPA: 3.6/4}
+{Sep 2018 - Apr 2022}
+{McMaster University}
+{Hamilton, ON}
+\end{rSection}
+
+\end{document}
