@@ -9,6 +9,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{charter}
 \usepackage[none]{hyphenat}  % Disable hyphenation
+\usepackage{helvet}
+\usepackage{xcolor}
 
 \pagestyle{empty}
 \setlist{nosep}
@@ -20,8 +22,8 @@
 }
 
 \newenvironment{sectionHeader}[1]{
-  \vspace{0.1em}  
-  {\bf \MakeUppercase{#1}} \vspace{0.25em} \hrule
+  \vspace{0.5em}
+  {\sffamily\bfseries\MakeUppercase{#1}} \vspace{0.25em} \textcolor{brown}{\hrule} 
 }
 
 \newenvironment{rSection}[4] {
